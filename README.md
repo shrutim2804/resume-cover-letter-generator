@@ -3,7 +3,7 @@
 A professional web application that uses AI to generate tailored resumes and cover letters with multiple template options and PDF export functionality.
 
 ## 🌟 Live Demo
-**Application URL:** `http://localhost:5000` (after starting the Flask server)
+**Application URL:** https://resume-cover-letter-generator-ts5i.onrender.com
 
 ## 🚀 Features
 
