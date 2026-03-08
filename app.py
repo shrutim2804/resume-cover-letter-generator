@@ -23,21 +23,18 @@ def generate_content():
     }
 
     body = {
-        "model": "openai/gpt-3.5-turbo",  # works reliably
+        "model": "openai/gpt-3.5-turbo",
         "messages": [{"role": "user", "content": prompt}]
     }
 
-    response = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=body)
-
-    print("🔁 OpenRouter raw response:")
-    print(response.text)
+    response = requests.post(
+        "https://openrouter.ai/api/v1/chat/completions",
+        headers=headers,
+        json=body
+    )
 
     result = response.json()
     return jsonify(result)
-
-if __name__ == "__main__":
-    app.run(debug=True)
-import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
