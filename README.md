@@ -57,7 +57,7 @@ Create professional, ATS-friendly resumes and cover letters in minutes — power
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/shruti/ai-resume-cover-letter-generator.git
+   git clone https://github.com/shrutim2804/resume-cover-letter-generator.git
    cd ai-resume-cover-letter-generator
    ```
 
