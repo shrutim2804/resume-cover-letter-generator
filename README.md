@@ -2,7 +2,7 @@
 
 Create professional, ATS-friendly resumes and cover letters in minutes — powered by AI.
 
-🔗 **Live Demo:** [Add your Render URL here]
+🔗 **Live Demo:** [ https://resume-cover-letter-generator-ts5i.onrender.com/ ]
 
 ---
 
