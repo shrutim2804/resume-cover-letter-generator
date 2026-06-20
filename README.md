@@ -1,280 +1,150 @@
-# AI Resume & Cover Letter Generator
+# 🚀 AI Resume & Cover Letter Generator
 
-A professional web application that uses AI to generate tailored resumes and cover letters with multiple template options and PDF export functionality.
+Create professional, ATS-friendly resumes and cover letters in minutes — powered by AI.
 
-## 🌟 Live Demo
-**Application URL:** https://resume-cover-letter-generator-ts5i.onrender.com
+🔗 **Live Demo:** [Add your Render URL here]
 
-## 🚀 Features
+---
 
-### 🤖 AI-Powered Generation
-- **OpenRouter API Integration**: Uses GPT-3.5-turbo for intelligent content creation
-- **Template-Aware Prompts**: AI generates content specific to selected template styles
-- **Real-time Generation**: Instant content creation with loading indicators
+## ✨ Features
 
-### 🎨 Professional Templates
-**4 Resume Templates:**
-- **Modern Professional** - Clean, contemporary design for tech roles
-- **Executive** - Bold, authoritative design for leadership positions  
-- **Creative** - Designed for designers, artists, and creative professionals
-- **Minimalist** - Ultra-clean, focused design with maximum impact
+- ⚡ **AI-Powered Generation** — Auto-generate tailored resumes and cover letters using the OpenRouter API (GPT)
+- 🎨 **Multiple Templates** — Choose from professional, ATS-friendly templates for both resumes and cover letters
+- 📝 **Live Editing** — Edit generated output instantly before exporting
+- 📄 **PDF Export** — Download polished resumes and cover letters as PDFs using jsPDF
+- 🌗 **Light/Dark Theme** — Toggle between themes for comfortable viewing
+- 🧪 **Sample Data Fill** — Test the generator instantly with one click
+- 📊 **Step-by-Step Flow** — Guided 3-step process from template selection to final document
 
-**3 Cover Letter Templates:**
-- **Traditional** - Classic formal format for conservative industries
-- **Modern** - Contemporary design for tech and creative companies
-- **Minimalist** - Direct, concise format that highlights your message
+---
 
-### 💼 Smart Features
-- **PDF Export**: Download professionally formatted PDFs with template-specific styling
-- **Real-time Preview**: Instant preview of generated content
-- **Form Validation**: Comprehensive validation with progress tracking
-- **Auto-save**: Automatically saves form data as you type
-- **Dark/Light Theme**: Toggle between themes for comfortable viewing
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+## 🖥️ Screenshots
 
-## 🛠️ Technology Stack
+### Home Page
+![Home]<img width="1918" height="918" alt="Screenshot 2026-06-20 145639" src="https://github.com/user-attachments/assets/4bef09d4-c569-4c4a-bf16-1e623c5bb28e" />
 
-### Frontend
-- **HTML5** - Semantic markup structure
-- **Tailwind CSS** - Utility-first CSS framework
-- **JavaScript ES6+** - Interactive functionality
-- **Font Awesome** - Professional icons
-- **jsPDF** - Client-side PDF generation
-- **Google Fonts (Poppins)** - Modern typography
 
-### Backend
-- **Python 3.7+** - Server-side logic
-- **Flask** - Lightweight web framework
-- **OpenRouter API** - AI content generation
-- **python-dotenv** - Environment variable management
-- **Requests** - HTTP library for API calls
+### Resume Templates
+![Resume Templates]<img width="1918" height="916" alt="Screenshot 2026-06-20 145658" src="https://github.com/user-attachments/assets/6c8b0e6b-3fc1-4a7d-81a8-da1675d9845c" />
 
-## 📦 Installation & Setup
 
-### Prerequisites
-- Python 3.7 or higher
-- OpenRouter API account
-- Modern web browser (Chrome, Firefox, Safari, Edge)
+### Cover Letter Templates
+![Cover Letter Templates]<img width="1906" height="910" alt="Screenshot 2026-06-20 145713" src="https://github.com/user-attachments/assets/d231dfb9-27f7-478e-b8c1-9f9e4dc8484f" />
 
-### Step-by-Step Setup
 
-1. **Clone or Download the Project**
+### Resume Generator
+![Resume Form]<img width="623" height="922" alt="Screenshot 2026-06-20 145856" src="https://github.com/user-attachments/assets/0bbde0b9-2e37-41d3-8ed0-7dde216428fb" />
 
-# If using git
-git clone <repository-url>
-cd ai-resume-generator
 
-# Or simply download and extract the project files
+### Cover Letter Generator
+![Cover Letter Form]<img width="592" height="897" alt="Screenshot 2026-06-20 145840" src="https://github.com/user-attachments/assets/e7909094-214b-4172-96dc-0ad40670933d" />
 
-2.Create Virtual Environment
-# On Windows
-python -m venv venv
-venv\Scripts\activate
+---
 
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
+## 🛠️ Tech Stack
 
+| Layer            | Technology              |
+|-------------------|--------------------------|
+| Frontend          | HTML, CSS, JavaScript    |
+| Backend           | Flask (Python)           |
+| AI Integration    | OpenRouter API (GPT)     |
+| PDF Generation    | jsPDF                    |
+| Deployment        | Render                   |
 
-3.Install Python Dependencies
-pip install flask python-dotenv requests
+---
 
-4.Configure Environment Variables
-Create a .env file in the root directory:
+## 📦 Installation
 
-env
-OPENROUTER_API_KEY="your_actual_openrouter_api_key_here"
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shruti/ai-resume-cover-letter-generator.git
+   cd ai-resume-cover-letter-generator
+   ```
 
-5.Get OpenRouter API Key
+2. **Set up a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
 
-> Visit OpenRouter
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-> Sign up for a free account
+4. **Configure environment variables**
 
-> Go to API Keys section
+   Create a `.env` file in the root directory:
+   ```env
+   OPENROUTER_API_KEY=your_api_key_here
+   ```
 
-> Generate a new API key
+5. **Run the app**
+   ```bash
+   python app.py
+   ```
 
-> Copy the key to your .env file
+6. Open `http://localhost:5000` in your browser.
 
+---
 
-6.Project Structure Verification
-Ensure your project has this structure:
+## 🚀 Usage
 
-ai-resume-generator/
-├── app.py                 # Flask backend server
-├── .env                  # Environment variables
-├── requirements.txt      # (Optional) Python dependencies
-├── venv/                # Virtual environment
-└── templates/
-    └── index.html       # Main application
+1. Select a resume and cover letter template from the **Templates** page.
+2. Fill in your details — name, experience, skills, and job target — or click **Fill Sample Data** to try it instantly.
+3. Click **Generate** to let the AI craft your tailored document.
+4. Edit the output if needed, then **Download as PDF**.
 
+---
 
- 7.Run the Application
-python app.py
+## 📁 Project Structure
 
+```
+ai-resume-cover-letter-generator/
+├── app.py                 # Flask backend & API routes
+├── templates/              # HTML templates
+├── static/
+│   ├── css/                 # Stylesheets
+│   ├── js/                  # Frontend logic (form handling, jsPDF export)
+│   └── assets/               # Images, icons
+├── requirements.txt
+└── README.md
+```
 
-8.Access the Application
-Open your web browser and navigate to:
-http://localhost:5000
+---
 
+## 🌐 Deployment
 
-🎯 Usage Guide
-Step 1: Template Selection
-Click on "View Templates" to see available options
+This project is deployed on **Render**. To deploy your own instance:
 
-Select resume and cover letter templates using the edit (✏️) buttons
+1. Push your repo to GitHub.
+2. Create a new **Web Service** on [Render](https://render.com).
+3. Set the build command: `pip install -r requirements.txt`
+4. Set the start command: `python app.py` (or `gunicorn app:app` for production)
+5. Add `OPENROUTER_API_KEY` under environment variables.
 
-Use template previews to make informed choices
+---
 
-Step 2: Fill in Your Information
-For Resume:
+## 🤝 Contributing
 
-Personal details (Name, Email, Phone, Location)
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-Professional summary
+1. Fork the repo
+2. Create a feature branch 
+3. Commit your changes
+4. Push and open a PR
 
-Skills and technologies
+---
 
-Work experience with achievements
+## 📬 Contact
 
-Education background
+**Shruti Mishra**
+- 📧 shrutimishra5020@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/shruti-mishra-5020s)
+- 🐙 [GitHub](https://github.com/shrutim2804)
 
-Portfolio and LinkedIn links (optional)
+---
 
-For Cover Letter:
+## 📄 License
 
-Personal introduction
-
-Target position and company
-
-Relevant experience highlights
-
-Motivation and cultural fit
-
-Professional closing
-
-Step 3: Generate Content
-Click "Generate Resume" or "Generate Cover Letter"
-
-Watch the progress indicator
-
-Preview the AI-generated content in real-time
-
-Step 4: Export Documents
-Click "Download PDF" for professional formatting
-
-Use "Print" button for hard copies
-
-Files are automatically named with template information
-
-🔧 API Configuration
-Backend API Endpoints
-POST /generate - Main AI content generation endpoint
-
-GET / - Serves the main application interface
-
-OpenRouter API Settings
-# Default configuration in app.py
-model = "openai/gpt-3.5-turbo"  # Reliable and cost-effective
-max_tokens = 1500              # Optimal for resume/cover letter length
-
-Customizing AI Behavior
-Modify the prompt templates in the frontend JavaScript to adjust AI output:
-// Example of template-specific prompting
-const prompt = `TEMPLATE: ${templateName}
-${template.formatting}
-
-Create a professional resume for ${name} applying for ${role}...
-`;
-🐛 Troubleshooting
-Common Issues & Solutions
-❌ "AI Generation Failed" Error
-
-bash
-# Check Flask server is running
-python app.py
-
-# Verify .env file exists and has correct API key
-cat .env
-
-# Check console for detailed error messages
-❌ PDF Download Not Working
-
-Ensure content is generated before downloading
-
-Check browser pop-up blockers
-
-Verify JavaScript is enabled
-
-❌ Template Not Applying
-
-Select templates before generating content
-
-Check template selection is saved (green indicators)
-
-Refresh page and reselect templates
-
-❌ Flask Server Issues
-
-bash
-# Check Python version
-python --version
-
-# Reactivate virtual environment
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-📊 Project Structure
-text
-ai-resume-generator/
-├── app.py                 # Flask backend server
-├── .env                  # Environment variables (create this)
-├── .gitignore           # Git ignore file
-├── requirements.txt     # Python dependencies
-├── venv/               # Virtual environment
-└── templates/
-    └── index.html      # Main application frontend
-🔒 Security Notes
-API keys are stored in .env file (never in code)
-
-No user data is stored on the server
-
-All processing happens in real-time
-
-Environment file is excluded from version control
-
-🚀 Deployment
-bash
-# Local development
-python app.py
-
-# Production (recommended to use WSGI server like Gunicorn)
-gunicorn app:app
-🤝 Contributing
-Fork the repository
-
-Create a feature branch
-
-Make your improvements
-
-Test thoroughly
-
-Submit a pull request
-
-📞 Support
-For technical support:
-
-Check troubleshooting section above
-
-Verify installation steps are completed correctly
-
-Examine console logs for specific error messages
-
-📄 License
-This project is open source and available under the MIT License.
-
-🙏 Acknowledgments
-OpenRouter for providing AI API access
-
-Flask team for the lightweight web framework
-
-Tailwind CSS for the utility-first CSS framework
+This project is licensed under the MIT License.
